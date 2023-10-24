@@ -4,6 +4,8 @@ import sys
 import time 
 
 from pyftdi.gpio import GpioAsyncController
+from pyftdi.spi import SpiController
+from spiflash.serialflash import SerialFlashManager
 
 IO_RST_L  = 0x10 # Mask corresponding to port b, pin 4
 IO_CDONE  = 0x40 # Mask corresponding to port b, pin 6
